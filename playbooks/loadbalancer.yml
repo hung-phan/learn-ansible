@@ -5,6 +5,7 @@
     - name: install web components
       apt:
         name:
+          - curl
           - htop
           - nginx
         state: present
