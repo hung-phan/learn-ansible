@@ -1,12 +1,5 @@
 ---
 - hosts: control
   become: true
-  tasks:
-    - name: install tools
-      apt:
-        name:
-          - curl
-          - htop
-          - python-httplib2
-        state: present
-        update_cache: yes
+  roles:
+    - control
