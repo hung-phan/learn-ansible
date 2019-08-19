@@ -10,6 +10,7 @@
           - libapache2-mod-wsgi
           - python-pip
           - python-virtualenv
+          - python-mysqldb
         state: present
         update_cache: yes
 
