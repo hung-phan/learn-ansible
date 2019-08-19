@@ -7,5 +7,6 @@
         name:
           - curl
           - htop
+          - python-httplib2
         state: present
         update_cache: yes
