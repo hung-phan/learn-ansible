@@ -3,10 +3,10 @@
 set -e # exit on failure
 set -x # log all executed commands
 
-ansible-playbook playbooks/control.yml
-ansible-playbook playbooks/database.yml
-ansible-playbook playbooks/webserver.yml
-ansible-playbook playbooks/loadbalancer.yml
+ansible-playbook control.yml
+ansible-playbook database.yml
+ansible-playbook webserver.yml
+ansible-playbook loadbalancer.yml
 
 set +x
 set +e
