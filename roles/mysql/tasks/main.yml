@@ -15,8 +15,8 @@
 - name: ensure mysql started
   service: name=mysql state=started enabled=yes
 
-- name: create demo database
+- name: create database
   mysql_db: name={{db_name}} state=present
 
-- name: create demo user
+- name: create user
   mysql_user: name={{db_user_name}} password={{db_user_pass}} priv={{db_name}}.*:ALL host='%' host='{{db_user_host}}' state=present

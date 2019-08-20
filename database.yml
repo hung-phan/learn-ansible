@@ -4,7 +4,6 @@
   roles:
     - role: mysql
       vars:
-        db_name: demo
-        db_user_name: demo
-        db_user_pass: demo
+        db_user_name: "{{db_user}}"
+        db_user_pass: "{{db_pass}}"
         db_user_host: '%'
