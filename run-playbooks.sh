@@ -3,7 +3,7 @@
 set -e # exit on failure
 set -x # log all executed commands
 
-ansible-playbook site.yml
+ansible-playbook --ask-vault-pass site.yml
 ansible-playbook stack_status.yml
 
 set +x
