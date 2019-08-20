@@ -6,7 +6,6 @@
       - apache2
       - libapache2-mod-wsgi
     state: present
-    update_cache: yes
 
 - name: ensure mod_wsgi enable
   apache2_module: name=wsgi state=present

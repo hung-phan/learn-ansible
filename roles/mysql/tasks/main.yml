@@ -6,7 +6,6 @@
       - mysql-server
       - htop
     state: present
-    update_cache: yes
 
 - name: ensure mysql listening on 0.0.0.0
   lineinfile: dest=/etc/mysql/my.cnf regexp=^bind-address line="bind-address = 0.0.0.0"
