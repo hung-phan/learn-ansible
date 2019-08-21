@@ -34,3 +34,14 @@ List-tasks
 ```bash
 $ ansible-playbook site.yml --list-tasks
 ```
+
+Syntax check
+
+```bash
+$ ansible-playbook site.yml --syntax-check
+```
+
+Dry-run
+```bash
+$ ansible-playbook site.yml --check
+```
